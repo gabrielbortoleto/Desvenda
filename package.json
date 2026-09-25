@@ -1,0 +1,20 @@
+{
+  "name": "desvende-ia",
+  "version": "1.0.0",
+  "description": "Plataforma educativa para ensinar Inteligência Artificial a iniciantes absolutos.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/db/seed.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7"
+  }
+}
+

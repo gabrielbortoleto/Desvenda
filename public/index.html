@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desvende IA — Área de Membros Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. LANDING PAGE -->
+    <section class="page active" data-page="landing">
+        <nav class="landing-nav">
+            <div class="logo"><span class="logo-badge">✦</span> <span class="logo-text">Desvende IA</span></div>
+            <div class="landing-links">
+                <a href="#guias">Os 4 Guias</a>
+                <a href="#metodo">O Método</a>
+                <a href="#conteudo">O que Inclui</a>
+                <a href="#para-quem">Para Quem É</a>
+                <a href="#oferta">Oferta</a>
+                <a href="#faq">Dúvidas</a>
+                <button class="btn btn-outline btn-sm" onclick="navigateTo('login')">Entrar</button>
+                <button class="btn btn-primary btn-sm" onclick="navigateTo('cadastro')">Garantir Acesso</button>
+            </div>
+        </nav>
+
+        <!-- 1. HERO SECTION ACIMA DA DOBRA -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="section-label"><i data-lucide="sparkles"></i> Coleção Digital + Vídeos Demonstrativos</span>
+                <h1 class="hero-title">Aprenda a usar Inteligência Artificial para ganhar tempo, produtividade e qualidade no dia a dia.</h1>
+                <p class="hero-subtitle">Do zero absoluto à prática real. Guias digitais visuais, demonstrações curtas em vídeo e modelos editáveis para organizar tarefas, escrever melhor, estudar e trabalhar com IA.</p>
+
+                <div class="hero-price-badge">
+                    <span class="price-label">Oferta Especial de Lançamento</span>
+                    <div class="price-value-box">
+                        <span class="price-currency">R$</span>
+                        <span class="price-amount">29,90</span>
+                        <span class="price-terms">à vista no PIX ou Cartão</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta mb-24">
+                    <button class="btn btn-primary btn-lg" onclick="navigateTo('cadastro')">
+                        <i data-lucide="shopping-bag"></i> Quero Garantir Minha Coleção
+                    </button>
+                    <a href="#guias" class="btn btn-outline btn-lg">Conhecer os Guias</a>
+                </div>
+
+                <div class="hero-trust-row">
+                    <span><i data-lucide="check-circle-2" class="text-cyan"></i> Acesso Imediato</span>
+                    <span><i data-lucide="shield-check" class="text-cyan"></i> 7 Dias de Garantia</span>
+                    <span><i data-lucide="user-check" class="text-cyan"></i> 100% Sem Pré-requisitos</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-book-stack">
+                    <div class="guide-mini-card guide-1">
+                        <span class="guide-tag">Guia 1</span>
+                        <h4>IA sem Mistério</h4>
+                        <p>Entenda o essencial e faça sua 1ª aplicação.</p>
+                    </div>
+                    <div class="guide-mini-card guide-2">
+                        <span class="guide-tag">Guia 2</span>
+                        <h4>IA no Dia a Dia</h4>
+                        <p>Organização, comunicação e estudos.</p>
+                    </div>
+                    <div class="guide-mini-card guide-3">
+                        <span class="guide-tag">Guia 3</span>
+                        <h4>IA no Trabalho</h4>
+                        <p>E-mails, relatórios, rotinas e checklists.</p>
+                    </div>
+                    <div class="guide-mini-card guide-4">
+                        <span class="guide-tag">Guia 4</span>
+                        <h4>IA como Vantagem</h4>
+                        <p>Crie seu acervo pessoal e rotinas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PARA QUEM É (PÚBLICO-ALVO) -->
+        <section class="landing-section" id="para-quem">
+            <div class="section-header text-center">
+                <span class="section-label">Para Quem Foi Feito</span>
+                <h2>Desenvolvido para quem quer resultados práticos sem complicação técnica</h2>
+                <p class="section-subtext">Não importa a sua profissão ou nível de afinidade com tecnologia. A proposta é dar autonomia para o seu dia a dia.</p>
+            </div>
+
+            <div class="features-grid mt-40">
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="briefcase"></i></div>
+                    <h3>Profissionais & Equipes</h3>
+                    <p>Escreva e-mails profissionais, estruture relatórios, crie briefings e ganhe horas no seu expediente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="user"></i></div>
+                    <h3>Autônomos & Freelancers</h3>
+                    <p>Prepare propostas comerciais, organize a comunicação com clientes e padronize seu atendimento.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="store"></i></div>
+                    <h3>Pequenos Empreendedores</h3>
+                    <p>Crie procedimentos operacionais, checklists de rotina e ideias de divulgação sem contratar consultorias.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="graduation-cap"></i></div>
+                    <h3>Estudantes & Pesquisadores</h3>
+                    <p>Resuma temas complexos, gere perguntas de revisão e aprenda conteúdos em frações do tempo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. GRADE DOS 4 GUIAS DIGITAIS -->
+        <section class="landing-section bg-surface-dark" id="guias">
+            <div class="section-header text-center">
+                <span class="section-label">A Coleção Completa</span>
+                <h2>Quatro Guias Digitais com Progressão Prática</h2>
+                <p class="section-subtext">Do entendimento básico até a incorporação definitiva da IA na sua rotina pessoal e profissional.</p>
+            </div>
+
+            <div class="guias-showcase-grid mt-40">
+                <!-- GUIA 1 -->
+                <div class="guia-card">
+                    <div class="guia-card-header g1">
+                        <span class="guia-num-badge">Guia 1</span>
+                        <h3>IA sem Mistério</h3>
+                        <p class="guia-subtitle">Entender o Essencial e Fazer a Primeira Aplicação</p>
+                    </div>
+                    <div class="guia-card-body">
+                        <ul class="guia-features-list">
+                            <li><i data-lucide="check" class="text-cyan"></i> Como a IA realmente funciona (sem linguagem técnica)</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Método para fazer pedidos claros com objetivo, contexto e tom</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Como identificar erros, lacunas e respostas genéricas</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Cuidados fundamentais com dados pessoais e sigilo</li>
+                        </ul>
+                        <div class="guia-entregavel">
+                            <strong>Entrega Prática:</strong> Concluir sua 1ª tarefa com IA e salvar uma instrução editável.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GUIA 2 -->
+                <div class="guia-card">
+                    <div class="guia-card-header g2">
+                        <span class="guia-num-badge">Guia 2</span>
+                        <h3>IA no Dia a Dia</h3>
+                        <p class="guia-subtitle">Aplicar IA em Situações Pessoais</p>
+                    </div>
+                    <div class="guia-card-body">
+                        <ul class="guia-features-list">
+                            <li><i data-lucide="check" class="text-cyan"></i> Organização de anotações e planejamento semanal de tarefas</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Redação e melhoria de mensagens importantes</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Explicação de assuntos difíceis com exemplos simples</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Criação de planos de estudo e exercícios de revisão</li>
+                        </ul>
+                        <div class="guia-entregavel">
+                            <strong>Entrega Prática:</strong> Adaptar três aplicações diretamente à sua rotina pessoal.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GUIA 3 -->
+                <div class="guia-card">
+                    <div class="guia-card-header g3">
+                        <span class="guia-num-badge">Guia 3</span>
+                        <h3>IA no Trabalho</h3>
+                        <p class="guia-subtitle">Apoiar Tarefas Profissionais</p>
+                    </div>
+                    <div class="guia-card-body">
+                        <ul class="guia-features-list">
+                            <li><i data-lucide="check" class="text-cyan"></i> Estruturação de e-mails profissionais e respostas difíceis</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Criação de briefings, minutas e sumários executivos</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Padronização de procedimentos operacionais</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Checklists de conferência de qualidade e revisão</li>
+                        </ul>
+                        <div class="guia-entregavel">
+                            <strong>Entrega Prática:</strong> Criar um procedimento profissional com entrada, instrução e revisão.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GUIA 4 -->
+                <div class="guia-card">
+                    <div class="guia-card-header g4">
+                        <span class="guia-num-badge">Guia 4</span>
+                        <h3>IA como Vantagem</h3>
+                        <p class="guia-subtitle">Transformar Experimentos em Práticas Recorrentes</p>
+                    </div>
+                    <div class="guia-card-body">
+                        <ul class="guia-features-list">
+                            <li><i data-lucide="check" class="text-cyan"></i> Montagem da sua biblioteca pessoal de instruções reutilizáveis</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Avaliação real de tempo economizado vs. qualidade obtida</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Seleção das melhores ferramentas sem precisar testar tudo</li>
+                            <li><i data-lucide="check" class="text-cyan"></i> Construção de hábitos diários de produtividade</li>
+                        </ul>
+                        <div class="guia-entregavel">
+                            <strong>Entrega Prática:</strong> Montar um plano com 3 aplicações recorrentes ativas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. O MÉTODO DE ENSINO (5 ETAPAS) -->
+        <section class="landing-section" id="metodo">
+            <div class="section-header text-center">
+                <span class="section-label">Metodologia Exclusiva</span>
+                <h2>O Método em 5 Etapas: Da Ideia ao Resultado Perfeito</h2>
+                <p class="section-subtext">Todos os guias e exemplos seguem uma estrutura previsível para você nunca mais ficar travado diante de uma tela em branco.</p>
+            </div>
+
+            <div class="metodo-steps-container mt-40">
+                <div class="metodo-step">
+                    <div class="metodo-step-num">1</div>
+                    <div class="metodo-step-content">
+                        <h4>Definir</h4>
+                        <p>Identificar exatamente qual é o problema e o resultado final desejado.</p>
+                    </div>
+                </div>
+                <div class="metodo-step">
+                    <div class="metodo-step-num">2</div>
+                    <div class="metodo-step-content">
+                        <h4>Contextualizar</h4>
+                        <p>Reunir os fatos, documentos e informações essenciais para a IA entender.</p>
+                    </div>
+                </div>
+                <div class="metodo-step">
+                    <div class="metodo-step-num">3</div>
+                    <div class="metodo-step-content">
+                        <h4>Pedir</h4>
+                        <p>Escrever uma instrução clara, especificando objetivo, público e formato.</p>
+                    </div>
+                </div>
+                <div class="metodo-step">
+                    <div class="metodo-step-num">4</div>
+                    <div class="metodo-step-content">
+                        <h4>Revisar</h4>
+                        <p>Identificar erros, lacunas, tom genérico e solicitar os ajustes necessários.</p>
+                    </div>
+                </div>
+                <div class="metodo-step">
+                    <div class="metodo-step-num">5</div>
+                    <div class="metodo-step-content">
+                        <h4>Aplicar</h4>
+                        <p>Utilizar o resultado final e guardar o modelo testado no seu acervo pessoal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BÔNUS E MATERIAIS INCLUÍDOS -->
+        <section class="landing-section bg-surface-dark" id="conteudo">
+            <div class="section-header text-center">
+                <span class="section-label">O que Mais Acompanha</span>
+                <h2>Materiais Complementares Incluídos Sem Custo Extra</h2>
+            </div>
+
+            <div class="bonus-grid mt-40">
+                <div class="bonus-card">
+                    <div class="bonus-icon"><i data-lucide="book-open"></i></div>
+                    <h3>Caderno de Aplicação Prática</h3>
+                    <p>Fichas impressas/digitais para exercícios, planejamento e registro de resultados alcançados.</p>
+                </div>
+                <div class="bonus-card">
+                    <div class="bonus-icon"><i data-lucide="copy"></i></div>
+                    <h3>Biblioteca de 30+ Prompts Testados</h3>
+                    <p>Modelos de comandos prontos para copiar, com campos editáveis para diversas situações do dia a dia.</p>
+                </div>
+                <div class="bonus-card">
+                    <div class="bonus-icon"><i data-lucide="video"></i></div>
+                    <h3>8 a 12 Vídeos Demonstrativos Curtos</h3>
+                    <p>Vídeos práticos de 3 a 6 minutos mostrando o uso direto na tela para tirar qualquer dúvida visual.</p>
+                </div>
+                <div class="bonus-card">
+                    <div class="bonus-icon"><i data-lucide="refresh-cw"></i></div>
+                    <h3>Plataforma Digital & Atualizações</h3>
+                    <p>Acesso à nossa plataforma web com leitor interativo, rastreamento de progresso e emissão de certificado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. OFERTA / CHECKOUT CARD -->
+        <section class="landing-section" id="oferta">
+            <div class="oferta-card-box">
+                <div class="oferta-badge">✦ OFERTA ESPECIAL DE LANÇAMENTO</div>
+                <h2 class="oferta-title">Garanta a Coleção Completa Inteligência Artificial na Prática</h2>
+                <p class="oferta-subtitle">Leve os 4 Guias Digitais + Caderno de Aplicação + Biblioteca de 30+ Prompts + Vídeos Demonstrativos + Acesso à Plataforma.</p>
+
+                <div class="oferta-price-wrapper">
+                    <span class="oferta-price-old">De R$ 97,00</span>
+                    <div class="oferta-price-main">
+                        <span class="oferta-currency">R$</span>
+                        <span class="oferta-amount">29,90</span>
+                    </div>
+                    <span class="oferta-payment-info">Pagamento único · Sem assinaturas ocultas</span>
+                </div>
+
+                <ul class="oferta-checklist">
+                    <li><i data-lucide="check-circle-2" class="text-cyan"></i> Acesso aos 4 Guias Digitais em PDF (Diagramação visual e confortável)</li>
+                    <li><i data-lucide="check-circle-2" class="text-cyan"></i> Caderno de Aplicação e Fichas Práticas</li>
+                    <li><i data-lucide="check-circle-2" class="text-cyan"></i> Acervo com 30+ Prompts Prontos para Copiar e Editar</li>
+                    <li><i data-lucide="check-circle-2" class="text-cyan"></i> Vídeos Demonstrativos de Tela (3 a 6 min)</li>
+                    <li><i data-lucide="check-circle-2" class="text-cyan"></i> Acesso à Plataforma Digital Interativa com Rastreamento de Progresso</li>
+                    <li><i data-lucide="check-circle-2" class="text-cyan"></i> Garantia Incondicional de 7 Dias</li>
+                </ul>
+
+                <button class="btn btn-primary btn-lg btn-block mt-24" onclick="navigateTo('cadastro')">
+                    <i data-lucide="shopping-bag"></i> Garantir Coleção Completa por R$ 29,90
+                </button>
+
+                <div class="oferta-garantia-box mt-24">
+                    <div class="garantia-icon"><i data-lucide="shield-check"></i></div>
+                    <div>
+                        <strong>Garantia Incondicional de 7 Dias</strong>
+                        <p>Experimente por 7 dias. Se você achar que o material não ajudou no seu dia a dia, basta solicitar o reembolso e devolveremos 100% do seu dinheiro sem complicações.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. FAQ (PERGUNTAS FREQUENTES) -->
+        <section class="landing-section bg-surface-dark" id="faq">
+            <div class="section-header text-center">
+                <span class="section-label">Perguntas Frequentes</span>
+                <h2>Tire Suas Dúvidas Antes de Começar</h2>
+            </div>
+
+            <div class="faq-container mt-40">
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <h4>Preciso ter algum conhecimento técnico prévio sobre IA?</h4>
+                        <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! A coleção foi criada exatamente para iniciantes absolutos. Explicamos o passo a passo sem jargões técnicos ou fórmulas complicadas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <h4>As ferramentas de IA recomendadas são pagas?</h4>
+                        <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não. Todas as demonstrações, guias e exemplos utilizam as versões gratuitas das ferramentas de IA disponíveis (como ChatGPT, Gemini e Copilot).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <h4>Como recebo meu acesso aos materiais?</h4>
+                        <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Após a confirmação da compra, você receberá um e-mail imediato com suas credenciais de acesso para entrar em nossa plataforma web e baixar todos os materiais.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <h4>Posso ler os guias pelo celular ou tablet?</h4>
+                        <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Os guias foram diagramados especificamente para garantir uma leitura confortável em qualquer tamanho de tela (celulares, tablets ou computadores).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <h4>Como funciona a garantia de 7 dias?</h4>
+                        <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Se em até 7 dias você decidir que o material não atendeu às suas expectativas, basta nos enviar uma mensagem que devolveremos 100% do valor pago.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER DA LANDING PAGE -->
+        <footer class="footer">
+            <div>© 2026 Desvende IA — Coleção Inteligência Artificial na Prática. Todos os direitos reservados.</div>
+            <div>
+                <a href="#guias">Os Guias</a> · 
+                <a href="#oferta">Garantia</a> · 
+                <a href="#" onclick="navigateTo('login')">Entrar na Área de Membros</a>
+            </div>
+        </footer>
+    </section>
+
+    <!-- 2. LOGIN -->
+    <section class="page" data-page="login">
+        <div class="auth-wrapper">
+            <div class="auth-card">
+                <a href="#" class="auth-logo" onclick="navigateTo('landing')"><span class="logo-badge">✦</span> <span class="logo-text">Desvende IA</span></a>
+                <h1>Entrar na Área de Membros</h1>
+                <p>Insira seus dados de acesso para continuar.</p>
+                <form id="login-form" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="login-email">E-mail</label>
+                        <input id="login-email" type="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Senha</label>
+                        <input id="login-password" type="password" required placeholder="Sua senha">
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit">Entrar na Plataforma</button>
+                </form>
+                <div class="auth-links">
+                    <a href="#" onclick="navigateTo('recuperar')">Esqueceu a senha?</a> · 
+                    <a href="#" onclick="navigateTo('cadastro')">Criar conta grátis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. CADASTRO -->
+    <section class="page" data-page="cadastro">
+        <div class="auth-wrapper">
+            <div class="auth-card">
+                <a href="#" class="auth-logo" onclick="navigateTo('landing')"><span class="logo-badge">✦</span> <span class="logo-text">Desvende IA</span></a>
+                <h1>Criar sua conta de membro</h1>
+                <p>Junte-se à plataforma em menos de 1 minuto.</p>
+                <form id="cadastro-form" onsubmit="handleCadastro(event)">
+                    <div class="form-group">
+                        <label for="cadastro-nome">Nome completo</label>
+                        <input id="cadastro-nome" type="text" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="cadastro-email">E-mail</label>
+                        <input id="cadastro-email" type="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="cadastro-password">Senha (mínimo 6 caracteres)</label>
+                        <input id="cadastro-password" type="password" required minlength="6" placeholder="Crie uma senha segura">
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit">Criar conta e acessar</button>
+                </form>
+                <div class="auth-links">
+                    <span>Já tem uma conta?</span> <a href="#" onclick="navigateTo('login')">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. RECUPERAR SENHA -->
+    <section class="page" data-page="recuperar">
+        <div class="auth-wrapper">
+            <div class="auth-card">
+                <a href="#" class="auth-logo" onclick="navigateTo('landing')"><span class="logo-badge">✦</span> <span class="logo-text">Desvende IA</span></a>
+                <h1>Recuperar acesso</h1>
+                <p>Digite seu e-mail para receber as instruções de redefinição.</p>
+                <form id="recuperar-form" onsubmit="handleRecuperar(event)">
+                    <div class="form-group">
+                        <label for="recuperar-email">E-mail cadastrado</label>
+                        <input id="recuperar-email" type="email" required placeholder="seu@email.com">
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit">Enviar link de recuperação</button>
+                </form>
+                <div class="auth-links">
+                    <a href="#" onclick="navigateTo('login')">Voltar para o login</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ONBOARDING -->
+    <section class="page" data-page="onboarding">
+        <div class="onboarding-wrapper">
+            <div class="onboarding-card">
+                <div class="onboarding-progress">
+                    <div id="onboarding-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="onboarding-step active" data-step="1">
+                    <div class="onboarding-icon"><i data-lucide="sparkles"></i></div>
+                    <h2>Qual sua experiência prévia com IA?</h2>
+                    <p>Isso nos ajuda a personalizar sua jornada de aprendizado.</p>
+                    <div class="chip-group">
+                        <div class="chip" onclick="selectChip(this)" data-value="NEVER">Nunca usei nenhuma ferramenta de IA</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="BEGINNER">Já experimentei, mas não uso no dia a dia</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="SOME">Uso de vez em quando</div>
+                    </div>
+                </div>
+
+                <div class="onboarding-step" data-step="2">
+                    <div class="onboarding-icon"><i data-lucide="target"></i></div>
+                    <h2>Qual o seu principal objetivo?</h2>
+                    <div class="chip-group">
+                        <div class="chip" onclick="selectChip(this)" data-value="Entender o básico">Entender o que é IA de verdade</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="Trabalho">Usar IA no meu trabalho</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="Produtividade">Ser mais produtivo(a) no dia a dia</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="Curiosidade">Curiosidade — quero explorar</div>
+                    </div>
+                </div>
+
+                <div class="onboarding-step" data-step="3">
+                    <div class="onboarding-icon"><i data-lucide="check-circle"></i></div>
+                    <h2>Tudo pronto!</h2>
+                    <p>Com base nas suas respostas, preparamos a trilha ideal para você.</p>
+                    <div class="recommended-track-card">
+                        <span class="badge badge-success">Recomendada para você</span>
+                        <h3>IA sem Mistério</h3>
+                        <p>12 lições curtas do zero absoluto até usar IA com confiança.</p>
+                        <div class="track-meta">
+                            <span>12 lições</span> · 
+                            <span>~60 min no total</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="onboarding-nav">
+                    <button id="onboarding-back" class="btn btn-ghost" onclick="handleOnboardingBack()" style="display: none;">Voltar</button>
+                    <button id="onboarding-next" class="btn btn-primary" onclick="handleOnboardingNext()">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. APP SHELL — ÁREA DE MEMBROS (NETFLIX STYLE) -->
+    <section class="page" data-page="app">
+        <!-- TOPBAR STREAMING PLATFORM -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <button class="topbar-menu" onclick="toggleMobileSidebar()" aria-label="Abrir menu">
+                    <i data-lucide="menu"></i>
+                </button>
+                <div class="logo"><span class="logo-badge">✦</span> <span class="logo-text">Desvende IA</span></div>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="topbar-search">
+                <i data-lucide="search"></i>
+                <input type="text" id="global-search-input" placeholder="Buscar cursos, aulas, tópicos de IA..." oninput="handleSearch(this.value)">
+            </div>
+
+            <!-- TOPBAR RIGHT ACTIONS -->
+            <div class="topbar-right">
+                <button class="topbar-icon-btn" title="Notificações" onclick="toggleNotificationsModal()">
+                    <i data-lucide="bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+
+                <!-- USER AVATAR DROPDOWN -->
+                <div class="topbar-user-menu" onclick="toggleUserDropdown()">
+                    <div class="user-avatar-small" id="user-avatar-initials">Jam</div>
+                    <span class="user-name-small" id="user-name-topbar">Jam</span>
+                    <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
+                </div>
+
+                <!-- DROPDOWN MENU -->
+                <div class="user-dropdown-menu" id="user-dropdown-menu">
+                    <div class="dropdown-header">
+                        <strong id="dropdown-user-name">Jam</strong>
+                        <span id="dropdown-user-email">aluno@desvende.com</span>
+                        <span class="badge badge-info mt-16" style="display: inline-block;">Membro Pro</span>
+                    </div>
+                    <hr>
+                    <a href="#" onclick="showView('perfil'); toggleUserDropdown()"><i data-lucide="user"></i> Meu Perfil</a>
+                    <a href="#" onclick="openCertificadosModal(); toggleUserDropdown()"><i data-lucide="award"></i> Meus Certificados</a>
+                    <a href="#" id="dropdown-admin-link" onclick="navigateTo('admin'); toggleUserDropdown()" style="display: none;"><i data-lucide="settings"></i> Área Admin</a>
+                    <hr>
+                    <a href="#" onclick="logout()" style="color: var(--error);"><i data-lucide="log-out"></i> Sair da conta</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo"><span class="logo-badge">✦</span> <span class="logo-text">Desvende IA</span></div>
+            </div>
+
+            <!-- USER MINI CARD SIDEBAR (NETFLIX MEMBER PROFILE) -->
+            <div class="sidebar-user-card">
+                <div class="user-avatar-medium" id="sidebar-avatar-img">Jam</div>
+                <div class="user-card-info">
+                    <strong id="sidebar-user-name">Jam</strong>
+                    <span class="badge badge-info" style="font-size: 10px; padding: 2px 8px;">Membro Pro</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-item active" data-view="painel" onclick="showView('painel')">
+                    <i data-lucide="film"></i>
+                    <span>Catálogo de Cursos</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="trilha" onclick="showView('trilha')">
+                    <i data-lucide="route"></i>
+                    <span>Trilha Principal</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="progresso" onclick="showView('progresso')">
+                    <i data-lucide="bar-chart-3"></i>
+                    <span>Meu Progresso</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="perfil" onclick="showView('perfil')">
+                    <i data-lucide="user"></i>
+                    <span>Perfil</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-item sidebar-admin" id="admin-link-btn" onclick="navigateTo('admin')" style="display: none;">
+                    <i data-lucide="settings"></i>
+                    <span>Área Admin</span>
+                </a>
+                <hr>
+                <a href="#" class="sidebar-item" onclick="logout()">
+                    <i data-lucide="log-out"></i>
+                    <span>Sair da conta</span>
+                </a>
+            </div>
+        </aside>
+        <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleMobileSidebar()"></div>
+
+        <!-- MAIN MEMBER AREA CONTENT (NETFLIX STREAMING EXPERIENCE) -->
+        <main class="main-content">
+            <!-- 6a. PAINEL DO ALUNO - CATÁLOGO DE CURSOS (NETFLIX STYLE) -->
+            <div class="view active" data-view="painel">
+                
+                <!-- MEMBER HERO BANNER -->
+                <div class="member-hero-banner">
+                    <div class="banner-content">
+                        <span class="section-label">Sua Academy</span>
+                        <h1>Bem-vindo(a), <span id="user-display-name">Jam</span> 👋</h1>
+                        <p>Continue assistindo e aprendendo com as masterclasses e módulos de IA generativa.</p>
+                        
+                        <!-- PROFILE DUAL PROGRESS WIDGET -->
+                        <div class="hero-progress-widget">
+                            <div class="widget-row">
+                                <span>Progresso da Trilha</span>
+                                <strong id="hero-progress-pct">65%</strong>
+                            </div>
+                            <div class="progress-bar mb-16">
+                                <div class="progress-fill" id="hero-progress-fill" style="width: 65%;"></div>
+                            </div>
+                            <div class="widget-row">
+                                <span>Progresse diário</span>
+                                <strong>80%</strong>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%; background: var(--accent-orange);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARROSSEL ROW 1: Fundamentos de IA -->
+                <div class="netflix-row" id="row-fundamentos">
+                    <div class="row-header">
+                        <h2>Fundamentos de IA</h2>
+                        <div class="row-nav-controls">
+                            <button class="carousel-btn" onclick="scrollCarousel('track-fundamentos', -1)"><i data-lucide="chevron-left"></i></button>
+                            <button class="carousel-btn" onclick="scrollCarousel('track-fundamentos', 1)"><i data-lucide="chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="track-fundamentos">
+                            <!-- Populado via JS (Fundamentos de IA) -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARROSSEL ROW 2: Meus Cursos em Destaque -->
+                <div class="netflix-row mt-32" id="row-destaque">
+                    <div class="row-header">
+                        <h2>Meus Cursos em Destaque</h2>
+                        <div class="row-nav-controls">
+                            <button class="carousel-btn" onclick="scrollCarousel('track-destaque', -1)"><i data-lucide="chevron-left"></i></button>
+                            <button class="carousel-btn" onclick="scrollCarousel('track-destaque', 1)"><i data-lucide="chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="track-destaque">
+                            <!-- Populado via JS (Meus Cursos) -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARROSSEL ROW 3: Nossas Aulas & Exercícios Práticos -->
+                <div class="netflix-row mt-32" id="row-aulas">
+                    <div class="row-header">
+                        <h2>Nossas Aulas Práticas</h2>
+                        <div class="row-nav-controls">
+                            <button class="carousel-btn" onclick="scrollCarousel('track-aulas', -1)"><i data-lucide="chevron-left"></i></button>
+                            <button class="carousel-btn" onclick="scrollCarousel('track-aulas', 1)"><i data-lucide="chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="track-aulas">
+                            <!-- Populado via JS (Aulas Práticas) -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RESUMO DE TRILHA ATUAL (CARD COMPLEMENTAR) -->
+                <div class="section-title mt-32">
+                    <h2>Sua Trilha Principal</h2>
+                </div>
+                <div class="track-card-dashboard">
+                    <div class="track-card-header">
+                        <h3>IA sem Mistério — Guia Oficial</h3>
+                        <span class="badge badge-info">12 Lições Ativas</span>
+                    </div>
+                    <p>Suba de nível praticando com o conteúdo integral do Livro 1.</p>
+                    <div class="track-progress-info mt-16">
+                        <span>Progresso gravado</span>
+                        <span id="track-progress-pct">0%</span>
+                    </div>
+                    <div class="progress-bar mb-16">
+                        <div class="progress-fill" id="track-progress-bar" style="width: 0%;"></div>
+                    </div>
+                    <button class="btn btn-primary btn-sm" onclick="showView('trilha')">Acessar Todas as Lições</button>
+                </div>
+            </div>
+
+            <!-- 6b. TRILHA -->
+            <div class="view" data-view="trilha">
+                <div class="trilha-hero-card">
+                    <button class="btn-back mb-16" onclick="showView('painel')">
+                        <i data-lucide="arrow-left"></i> Voltar ao catálogo
+                    </button>
+                    <div class="trilha-hero-content">
+                        <div class="trilha-hero-badge"><i data-lucide="sparkles"></i> Trilha Oficial Desvende IA</div>
+                        <h1 class="trilha-hero-title">IA sem Mistério — Guia Prático do Zero</h1>
+                        <p class="trilha-hero-description">Domine os conceitos essenciais de Inteligência Artificial com 12 lições práticas, exercícios interativos e aplicação no seu dia a dia.</p>
+                        <div class="trilha-hero-meta">
+                            <span><i data-lucide="layers"></i> 4 Módulos</span>
+                            <span><i data-lucide="book-open"></i> 12 Lições</span>
+                            <span><i data-lucide="clock"></i> ~60 min no total</span>
+                            <span><i data-lucide="award"></i> Certificado Incluso</span>
+                        </div>
+                    </div>
+                    <div class="trilha-hero-progress-box">
+                        <div class="progress-info mb-8">
+                            <span class="text-secondary font-weight-600">Progresso Geral na Trilha</span>
+                            <span id="trilha-progress-pct" class="text-cyan font-weight-800">0%</span>
+                        </div>
+                        <div class="progress-bar progress-bar-lg mb-12">
+                            <div class="progress-fill" id="trilha-progress-bar" style="width: 0%;"></div>
+                        </div>
+                        <span class="text-muted text-xs">Conclua todas as lições para emitir o seu certificado.</span>
+                    </div>
+                </div>
+
+                <div class="section-title mt-32 mb-16">
+                    <h2>Conteúdo do Curso & Módulos</h2>
+                </div>
+
+                <div id="modules-container">
+                    <!-- Preenchido dinamicamente via API -->
+                </div>
+            </div>
+
+            <!-- 6c. LIÇÃO PLAYER -->
+            <div class="view" data-view="licao">
+                <div class="lesson-top-bar">
+                    <button class="btn-back" onclick="showView('trilha')"><i data-lucide="x"></i> Fechar Player</button>
+                    <div class="lesson-progress-wrapper">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="lesson-progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <span id="lesson-step-text">Passo 1 de 5</span>
+                    </div>
+                </div>
+
+                <div class="lesson-body" id="lesson-body">
+                    <!-- Seções acumuladas dinamicamente -->
+                </div>
+
+                <div class="lesson-footer">
+                    <button id="lesson-continue-btn" class="btn btn-primary btn-block" onclick="nextSection()">Continuar</button>
+                </div>
+            </div>
+
+            <!-- 6d. CONCLUSÃO -->
+            <div class="view" data-view="conclusao">
+                <div class="conclusao-wrapper">
+                    <div class="conclusao-card">
+                        <div class="conclusao-icon"><i data-lucide="check-circle"></i></div>
+                        <h1>Lição concluída! 🎉</h1>
+                        <p id="completed-lesson-title">O que é inteligência artificial, afinal?</p>
+                        <div class="conclusao-stats">
+                            <div class="conclusao-stat">
+                                <span class="conclusao-value" id="earned-points">+10</span>
+                                <span>pontos ganhos</span>
+                            </div>
+                            <div class="conclusao-stat">
+                                <span class="conclusao-value" id="lesson-score">100%</span>
+                                <span>de acerto</span>
+                            </div>
+                        </div>
+                        <div class="conclusao-actions">
+                            <button class="btn btn-primary btn-lg" onclick="startNextLesson()">Próxima lição</button>
+                            <button class="btn btn-outline" onclick="showView('trilha')">Voltar à trilha</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6e. PROGRESSO -->
+            <div class="view" data-view="progresso">
+                <div class="content-header">
+                    <h1>Seu Progresso de Aprendizagem</h1>
+                    <p>Acompanhe seu desempenho detalhado por módulo e estatísticas de conquistas.</p>
+                </div>
+
+                <div class="progresso-metrics-grid mb-32">
+                    <div class="metric-card">
+                        <div class="metric-icon cyan-bg"><i data-lucide="book-open"></i></div>
+                        <div class="metric-info">
+                            <span class="metric-value" id="progress-total-completed">0 / 12</span>
+                            <span class="metric-label">Lições Concluídas</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon orange-bg"><i data-lucide="zap"></i></div>
+                        <div class="metric-info">
+                            <span class="metric-value" id="progress-total-points">0 pts</span>
+                            <span class="metric-label">Pontos Acumulados</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon purple-bg"><i data-lucide="award"></i></div>
+                        <div class="metric-info">
+                            <span class="metric-value" id="overall-progress-value">0%</span>
+                            <span class="metric-label">Conclusão da Trilha</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progresso-banner-card mb-32">
+                    <div class="progresso-banner-text">
+                        <h3>Trilha Oficial: IA sem Mistério</h3>
+                        <p class="text-secondary">Seu progresso é gravado automaticamente a cada lição e atividade concluída.</p>
+                    </div>
+                    <div class="progresso-banner-bar-box">
+                        <div class="progress-bar progress-bar-lg mb-8">
+                            <div class="progress-fill" id="progresso-banner-fill" style="width: 0%;"></div>
+                        </div>
+                        <span class="text-secondary text-sm" id="progresso-banner-text">0 de 12 lições completas</span>
+                    </div>
+                </div>
+
+                <div class="section-title mb-16">
+                    <h2>Progresso Detalhado por Módulo</h2>
+                </div>
+                <div id="progress-modules-container">
+                    <!-- Preenchido via API em script.js -->
+                </div>
+            </div>
+
+            <!-- 6f. PERFIL -->
+            <div class="view" data-view="perfil">
+                <div class="content-header">
+                    <h1>Seu perfil de membro</h1>
+                    <p>Atualize suas preferências e dados da conta.</p>
+                </div>
+
+                <div class="perfil-card">
+                    <form id="perfil-form" onsubmit="saveProfile(event)">
+                        <div class="form-group">
+                            <label for="perfil-nome">Seu nome</label>
+                            <input id="perfil-nome" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="perfil-email">E-mail</label>
+                            <input id="perfil-email" type="email" readonly disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="perfil-nivel">Nível de familiaridade</label>
+                            <select id="perfil-nivel">
+                                <option value="NEVER">Nunca usei Nenhuma Ferramenta</option>
+                                <option value="BEGINNER">Já experimentei, mas não uso no dia a dia</option>
+                                <option value="SOME">Uso de vez em quando</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="perfil-objetivo">Objetivo principal</label>
+                            <input id="perfil-objetivo" type="text" placeholder="Ex: Usar no trabalho, estudos...">
+                        </div>
+                        <button class="btn btn-primary" type="submit">Salvar alterações</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- 7. ÁREA ADMINISTRATIVA PROTEGIDA -->
+    <section class="page" data-page="admin">
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo"><span class="logo-badge">✦</span> <span class="logo-text">Desvende IA</span></div>
+                <span class="admin-badge">Admin</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-item active" data-view="admin-dashboard" onclick="showAdminView('admin-dashboard')">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="admin-trilhas" onclick="showAdminView('admin-trilhas')">
+                    <i data-lucide="route"></i>
+                    <span>Trilhas</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="admin-licao-editor" onclick="showAdminView('admin-licao-editor')">
+                    <i data-lucide="book-open"></i>
+                    <span>Lições</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-item" onclick="navigateTo('app')">
+                    <i data-lucide="arrow-left"></i>
+                    <span>Voltar à área do aluno</span>
+                </a>
+                <hr>
+                <a href="#" class="sidebar-item" onclick="logout()">
+                    <i data-lucide="log-out"></i>
+                    <span>Sair</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="admin-content">
+            <!-- 7a. DASHBOARD ADMIN COM DADOS REAIS -->
+            <div class="admin-view active" data-view="admin-dashboard">
+                <h1>Painel Administrativo</h1>
+                <p class="mb-24">Visão geral do conteúdo e atividade de alunos em tempo real.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <span class="stat-value" id="admin-stat-students">0</span>
+                            <span class="stat-label">Alunos cadastrados</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <span class="stat-value" id="admin-stat-lessons">0</span>
+                            <span class="stat-label">Lições publicadas</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <span class="stat-value" id="admin-stat-modules">0</span>
+                            <span class="stat-label">Módulos ativos</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <span class="stat-value" id="admin-stat-tracks">0</span>
+                            <span class="stat-label">Trilhas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-title mt-32">
+                    <h2>Atividade recente de alunos</h2>
+                </div>
+                <div class="admin-activity-list" id="admin-activity-container">
+                    <p class="text-muted">Nenhuma atividade recente registrada.</p>
+                </div>
+            </div>
+
+            <!-- 7b. TRILHAS ADMIN DINO -->
+            <div class="admin-view" data-view="admin-trilhas">
+                <div class="admin-header">
+                    <h1>Gerenciar Trilhas</h1>
+                </div>
+                <div class="admin-table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Nome da Trilha</th>
+                                <th>Status</th>
+                                <th>Módulos</th>
+                                <th>Lições</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-tracks-tbody">
+                            <!-- Preenchido via API -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 7c. EDITOR DE LIÇÃO INTEGRAL -->
+            <div class="admin-view" data-view="admin-licao-editor">
+                <div class="admin-header">
+                    <div>
+                        <h1>Editor de Lições</h1>
+                        <span id="admin-editor-status-badge" class="status-badge draft">Rascunho</span>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button id="admin-preview-btn" class="btn btn-outline" onclick="adminPreviewLesson()">
+                            <i data-lucide="eye"></i> Pré-visualizar
+                        </button>
+                        <button id="admin-publish-btn" class="btn btn-secondary" onclick="adminPublishLesson()">
+                            Publicar
+                        </button>
+                        <button id="admin-save-btn" class="btn btn-primary" onclick="adminSaveLesson(event)">
+                            Salvar no Banco
+                        </button>
+                    </div>
+                </div>
+
+                <div class="admin-editor-layout">
+                    <div class="admin-lesson-selector">
+                        <label for="admin-lesson-select">Selecionar lição para editar:</label>
+                        <select id="admin-lesson-select" onchange="adminSelectLesson()">
+                            <!-- Carregado via API -->
+                        </select>
+                    </div>
+
+                    <form id="admin-lesson-form" onsubmit="adminSaveLesson(event)">
+                        <div class="form-row">
+                            <div class="form-group flex-2">
+                                <label for="admin-title">Título da lição</label>
+                                <input id="admin-title" type="text" required placeholder="Ex: O que é Inteligência Artificial">
+                            </div>
+                            <div class="form-group flex-1">
+                                <label for="admin-time">Tempo estimado (min)</label>
+                                <input id="admin-time" type="number" min="1" max="60" value="5">
+                            </div>
+                            <div class="form-group flex-1">
+                                <label for="admin-status">Status de publicação</label>
+                                <select id="admin-status">
+                                    <option value="DRAFT">Rascunho</option>
+                                    <option value="PUBLISHED">Publicado</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-hook">Pergunta / Situação Inicial (Hook)</label>
+                            <textarea id="admin-hook" rows="3" required placeholder="Situação cotidiana que desperta o interesse do aluno"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-explanation">Explicação em Linguagem Simples</label>
+                            <textarea id="admin-explanation" rows="6" required placeholder="Texto didático e curto sem jargões complexos"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label for="admin-visual-type">Tipo de Exemplo Visual</label>
+                                <select id="admin-visual-type">
+                                    <option value="COMPARISON">Tabela Comparativa</option>
+                                    <option value="STEPS">Passos Numerados</option>
+                                    <option value="CHAT">Exemplo de Chat</option>
+                                    <option value="TIPS">Cards de Dicas</option>
+                                    <option value="TWO_COLUMNS">Duas Colunas (Pode vs Não pode)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-visual-data">Dados Estruturados do Exemplo (JSON)</label>
+                            <textarea id="admin-visual-data" rows="4" placeholder='{"table": [...]}'></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-summary">Resumo das Ideias Essenciais</label>
+                            <textarea id="admin-summary" rows="3" required placeholder="Ideias principais para memorização"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-next-step">Próximo Passo / Convite</label>
+                            <input id="admin-next-step" type="text" placeholder="Dica da próxima lição">
+                        </div>
+
+                        <hr class="my-24">
+
+                        <h3>Atividade Prática da Lição</h3>
+                        <div class="form-row">
+                            <div class="form-group flex-2">
+                                <label for="admin-question-text">Enunciado da Pergunta</label>
+                                <input id="admin-question-text" type="text" placeholder="Ex: Qual dessas opções é verdadeira?">
+                            </div>
+                            <div class="form-group flex-1">
+                                <label for="admin-question-type">Tipo de Exercício</label>
+                                <select id="admin-question-type">
+                                    <option value="MULTIPLE_CHOICE">Múltipla Escolha</option>
+                                    <option value="TRUE_FALSE">Verdadero ou Falso</option>
+                                    <option value="ORDERING">Ordenação de Etapas</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Opções de Resposta (separadas por linha)</label>
+                            <textarea id="admin-question-options" rows="4" placeholder="Opção 1&#10;Opção 2&#10;Opção 3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-correct-answer">Índice da Resposta Correta (0, 1, 2...)</label>
+                            <input id="admin-correct-answer" type="text" value="0" placeholder="0">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label for="admin-feedback-correct">Feedback para Acerto</label>
+                                <textarea id="admin-feedback-correct" rows="2" placeholder="Explicar por que a resposta está certa"></textarea>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label for="admin-feedback-incorrect">Feedback para Erro</label>
+                                <textarea id="admin-feedback-incorrect" rows="2" placeholder="Orientar o aluno com respeito"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 7d. PRÉ-VISUALIZAÇÃO FIEL DE LIÇÃO -->
+            <div class="admin-view" data-view="admin-preview">
+                <div class="admin-header">
+                    <button class="btn btn-outline" onclick="showAdminView('admin-licao-editor')"><i data-lucide="arrow-left"></i> Voltar ao editor</button>
+                    <h1>Pré-visualização Fiel da Lição</h1>
+                </div>
+                <div class="admin-preview-frame">
+                    <div id="admin-preview-container">
+                        <!-- Renderizado como o aluno verá -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- 8. DOCK DE NAVEGAÇÃO INFERIOR RÁPIDA (NETFLIX FLOATING DOCK) -->
+    <div class="bottom-dock-container">
+        <div class="bottom-dock">
+            <button class="dock-btn dock-btn-main active" id="dock-btn-dashboards" onclick="showView('painel')">
+                <i data-lucide="layout-dashboard"></i>
+                <span>Dashboards</span>
+            </button>
+            <button class="dock-btn" onclick="openCertificadosModal()">
+                <i data-lucide="award"></i>
+                <span>Meus Certificados</span>
+            </button>
+            <button class="dock-btn" onclick="openComunidadeModal()">
+                <i data-lucide="users"></i>
+                <span>Comunidade</span>
+            </button>
+            <button class="dock-btn" onclick="openSuporteModal()">
+                <i data-lucide="help-circle"></i>
+                <span>Suporte</span>
+            </button>
+            <button class="dock-btn" onclick="showView('perfil')">
+                <i data-lucide="settings"></i>
+                <span>Configurações</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- MODAIS / DRAWERS DO SISTEMA DE MEMBROS -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeModal()"><i data-lucide="x"></i></button>
+            <div id="modal-content-body">
+                <!-- Conteúdo dos modais injetado via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

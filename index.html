@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desvende IA — Aprenda IA do zero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. LANDING -->
+    <section class="page active" data-page="landing">
+        <nav class="landing-nav">
+            <div class="logo">✦ Desvende IA</div>
+            <div class="landing-links">
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#conteudo">Conteúdo</a>
+                <button class="btn btn-primary btn-sm" onclick="navigateTo('cadastro')">Começar agora</button>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Aprenda inteligência artificial do zero — sem complicação.</h1>
+                <p class="hero-subtitle">Lições curtas e práticas para você entender, usar e aplicar IA no seu dia a dia. Sem jargão, sem pré-requisitos.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" onclick="navigateTo('cadastro')">Criar conta grátis</button>
+                    <button class="btn btn-outline btn-lg" onclick="navigateTo('login')">Já tenho conta</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg viewBox="0 0 400 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Abstract geometric shapes representing learning/discovery -->
+                    <circle cx="200" cy="200" r="150" fill="none" stroke="#20B2AA" stroke-width="2" stroke-dasharray="10 10" opacity="0.3" />
+                    <circle cx="200" cy="200" r="100" fill="none" stroke="#FF6B6B" stroke-width="1.5" opacity="0.2" />
+                    <rect x="150" y="80" width="40" height="40" rx="10" fill="#0B4F6C" opacity="0.8" transform="rotate(15 170 100)" />
+                    <circle cx="300" cy="150" r="25" fill="#FFD93D" opacity="0.9" />
+                    <circle cx="100" cy="220" r="15" fill="#FF6B6B" opacity="0.8" />
+                    <rect x="250" y="260" width="60" height="60" rx="15" fill="#20B2AA" opacity="0.7" transform="rotate(-10 280 290)" />
+                    
+                    <!-- Connecting lines -->
+                    <path d="M 170 100 Q 250 120 300 150" fill="none" stroke="#0B4F6C" stroke-width="3" opacity="0.4" />
+                    <path d="M 100 220 Q 150 250 280 290" fill="none" stroke="#0B4F6C" stroke-width="3" opacity="0.4" />
+                    <path d="M 170 100 Q 120 160 100 220" fill="none" stroke="#0B4F6C" stroke-width="3" opacity="0.4" />
+                    <path d="M 300 150 Q 320 200 280 290" fill="none" stroke="#0B4F6C" stroke-width="3" opacity="0.4" />
+                    
+                    <!-- Center node -->
+                    <circle cx="200" cy="200" r="35" fill="#0B4F6C" />
+                    <circle cx="200" cy="200" r="15" fill="#FFFFFF" />
+                </svg>
+            </div>
+        </section>
+
+        <section class="features" id="como-funciona">
+            <div class="features-header">
+                <span class="section-label">Por que aprender aqui</span>
+                <h2>Tudo o que você precisa para começar</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="clock"></i></div>
+                    <h3>Lições de 5 minutos</h3>
+                    <p>Aprenda no seu ritmo, com conteúdo que cabe na sua rotina.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="target"></i></div>
+                    <h3>Prática desde o início</h3>
+                    <p>Atividades em toda lição para fixar o aprendizado.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Conteúdo honesto</h3>
+                    <p>Sem promessas exageradas. Você aprende o que IA realmente faz.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="trending-up"></i></div>
+                    <h3>Progresso visível</h3>
+                    <p>Acompanhe exatamente o que já aprendeu e o que vem a seguir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-preview" id="conteudo">
+            <div class="content-preview-header">
+                <span class="section-label">Conteúdo</span>
+                <h2>Comece com a trilha IA sem Mistério</h2>
+                <p>12 lições organizadas em 4 módulos que levam você do zero até as aplicações mais úteis do dia a dia.</p>
+            </div>
+            <div class="modules-preview-list">
+                <div class="module-preview-item">Módulo 1: Entendendo o Básico</div>
+                <div class="module-preview-item">Módulo 2: Suas Primeiras Conversas com IA</div>
+                <div class="module-preview-item">Módulo 3: IA na Prática</div>
+                <div class="module-preview-item">Módulo 4: Usando IA com Responsabilidade</div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Pronto para desvendar a IA?</h2>
+            <p>Junte-se a nós e comece sua jornada hoje mesmo. O básico é sempre grátis.</p>
+            <button class="btn btn-primary btn-lg" onclick="navigateTo('cadastro')">Criar conta grátis</button>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-left">© 2026 Desvende IA</div>
+            <div class="footer-right">
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#conteudo">Conteúdo</a>
+            </div>
+        </footer>
+    </section>
+
+    <!-- 2. LOGIN -->
+    <section class="page" data-page="login">
+        <div class="auth-wrapper">
+            <div class="auth-card">
+                <div class="auth-logo">✦ Desvende IA</div>
+                <h1>Entrar na sua conta</h1>
+                <form id="login-form" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="login-email">E-mail</label>
+                        <input id="login-email" type="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Senha</label>
+                        <input id="login-password" type="password" required placeholder="Sua senha">
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit">Entrar</button>
+                    <div class="auth-links">
+                        <a href="#" onclick="navigateTo('recuperar')">Esqueceu a senha?</a>
+                        <span>·</span>
+                        <a href="#" onclick="navigateTo('cadastro')">Criar conta</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. CADASTRO -->
+    <section class="page" data-page="cadastro">
+        <div class="auth-wrapper">
+            <div class="auth-card">
+                <div class="auth-logo">✦ Desvende IA</div>
+                <h1>Criar sua conta</h1>
+                <form id="cadastro-form" onsubmit="handleCadastro(event)">
+                    <div class="form-group">
+                        <label for="cadastro-nome">Seu nome</label>
+                        <input id="cadastro-nome" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cadastro-email">E-mail</label>
+                        <input id="cadastro-email" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cadastro-password">Senha</label>
+                        <input id="cadastro-password" type="password" required minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label for="cadastro-password-confirm">Confirmar senha</label>
+                        <input id="cadastro-password-confirm" type="password" required>
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit">Criar minha conta</button>
+                    <div class="auth-links">
+                        Já tem conta? <a href="#" onclick="navigateTo('login')">Entrar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. RECUPERAR -->
+    <section class="page" data-page="recuperar">
+        <div class="auth-wrapper">
+            <div class="auth-card">
+                <div class="auth-logo">✦ Desvende IA</div>
+                <h1>Recuperar acesso</h1>
+                <p>Digite seu e-mail e enviaremos um link para redefinir sua senha.</p>
+                <form id="recuperar-form">
+                    <div class="form-group">
+                        <label for="recuperar-email">E-mail</label>
+                        <input id="recuperar-email" type="email" required>
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit">Enviar link de recuperação</button>
+                    <div class="auth-links">
+                        <a href="#" onclick="navigateTo('login')">Voltar para o login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ONBOARDING -->
+    <section class="page" data-page="onboarding">
+        <div class="onboarding-wrapper">
+            <div class="onboarding-card">
+                <div class="onboarding-progress">
+                    <div id="onboarding-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="onboarding-step active" data-step="1">
+                    <div class="onboarding-icon"><i data-lucide="sparkles"></i></div>
+                    <h2>Qual sua experiência com IA?</h2>
+                    <p>Isso nos ajuda a personalizar sua trilha.</p>
+                    <div class="chip-group">
+                        <div class="chip" onclick="selectChip(this)" data-value="nenhuma">Nunca usei nenhuma ferramenta de IA</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="basica">Já experimentei, mas não uso no dia a dia</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="intermediaria">Uso de vez em quando</div>
+                    </div>
+                </div>
+
+                <div class="onboarding-step" data-step="2">
+                    <div class="onboarding-icon"><i data-lucide="target"></i></div>
+                    <h2>O que você quer alcançar?</h2>
+                    <div class="chip-group">
+                        <div class="chip" onclick="selectChip(this)" data-value="entender">Entender o que é IA de verdade</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="trabalho">Usar IA no meu trabalho</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="produtividade">Ser mais produtivo(a) no dia a dia</div>
+                        <div class="chip" onclick="selectChip(this)" data-value="curiosidade">Curiosidade — quero explorar</div>
+                    </div>
+                </div>
+
+                <div class="onboarding-step" data-step="3">
+                    <div class="onboarding-icon"><i data-lucide="check-circle"></i></div>
+                    <h2>Tudo pronto!</h2>
+                    <p>Com base nas suas respostas, preparamos a trilha ideal para você.</p>
+                    <div class="recommended-track-card">
+                        <span class="badge badge-success">Recomendada</span>
+                        <h3>IA sem Mistério</h3>
+                        <p>12 lições do zero absoluto até usar IA com confiança no dia a dia.</p>
+                        <div class="track-meta">
+                            <span>12 lições</span>
+                            <span>~60 min no total</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="onboarding-nav">
+                    <button id="onboarding-back" class="btn btn-ghost" onclick="handleOnboardingBack()" style="display: none;">Voltar</button>
+                    <button id="onboarding-next" class="btn btn-primary" onclick="handleOnboardingNext()">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. APP SHELL -->
+    <section class="page" data-page="app">
+        <header class="topbar">
+            <button class="topbar-menu" onclick="toggleMobileSidebar()" aria-label="Abrir menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <span class="topbar-logo">✦ Desvende IA</span>
+            <div class="topbar-avatar"><span>EST</span></div>
+        </header>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">✦ Desvende IA</div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-item active" data-view="painel" onclick="showView('painel')">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Painel</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="trilha" onclick="showView('trilha')">
+                    <i data-lucide="route"></i>
+                    <span>Trilha</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="progresso" onclick="showView('progresso')">
+                    <i data-lucide="bar-chart-3"></i>
+                    <span>Progresso</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="perfil" onclick="showView('perfil')">
+                    <i data-lucide="user"></i>
+                    <span>Perfil</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-item sidebar-admin" onclick="navigateTo('admin')">
+                    <i data-lucide="settings"></i>
+                    <span>Admin</span>
+                </a>
+                <hr>
+                <a href="#" class="sidebar-item" onclick="navigateTo('landing')">
+                    <i data-lucide="log-out"></i>
+                    <span>Sair</span>
+                </a>
+            </div>
+        </aside>
+
+        <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleMobileSidebar()"></div>
+
+        <main class="main-content">
+            <!-- 6a. PAINEL -->
+            <div class="view active" data-view="painel">
+                <div class="content-header">
+                    <h1>Olá, <span id="user-display-name">Estudante</span>! 👋</h1>
+                    <p>Continue sua jornada de aprendizado.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: #e0f7fa;"><i data-lucide="book-open" style="color: #0B4F6C;"></i></div>
+                        <div class="stat-info">
+                            <span id="stat-lessons" class="stat-value">0</span>
+                            <span class="stat-label">Lições completas</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: #fffde7;"><i data-lucide="star" style="color: #fbc02d;"></i></div>
+                        <div class="stat-info">
+                            <span id="stat-points" class="stat-value">0</span>
+                            <span class="stat-label">Pontos</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: #ffebee;"><i data-lucide="zap" style="color: #FF6B6B;"></i></div>
+                        <div class="stat-info">
+                            <span id="stat-streak" class="stat-value">1</span>
+                            <span class="stat-label">Dia(s) seguido(s)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-title">
+                    <h2>Continue de onde parou</h2>
+                </div>
+                <div id="next-lesson-card" class="next-lesson-card">
+                    <div class="next-lesson-info">
+                        <span class="next-lesson-module">Módulo 1</span>
+                        <h3 class="next-lesson-title">O que é inteligência artificial, afinal?</h3>
+                        <p>Descubra os conceitos fundamentais para iniciar sua jornada.</p>
+                        <div class="next-lesson-meta">
+                            <span>~5 min</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="startLesson(1)">Continuar</button>
+                </div>
+
+                <div class="section-title">
+                    <h2>Sua trilha</h2>
+                </div>
+                <div class="track-card-dashboard">
+                    <div class="track-card-header">
+                        <h3>IA sem Mistério</h3>
+                        <span class="badge badge-info">Em andamento</span>
+                    </div>
+                    <p>Aprenda os conceitos básicos e as aplicações práticas de IA.</p>
+                    <div class="track-progress-info">
+                        <span><span id="track-progress-text">0 de 12</span> lições</span>
+                        <span id="track-progress-pct">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="track-progress-bar" style="width: 0%;"></div>
+                    </div>
+                    <button class="btn btn-outline btn-sm" onclick="showView('trilha')">Ver trilha completa</button>
+                </div>
+            </div>
+
+            <!-- 6b. TRILHA -->
+            <div class="view" data-view="trilha">
+                <div class="content-header">
+                    <button class="btn-back" onclick="showView('painel')" aria-label="Voltar para o Painel">
+                        <i data-lucide="arrow-left"></i> Painel
+                    </button>
+                    <h1>IA sem Mistério</h1>
+                    <p>Sua primeira trilha: do zero até usar IA com confiança.</p>
+                </div>
+
+                <div class="track-overall-progress">
+                    <div class="progress-info">
+                        <span>Progresso geral</span>
+                        <span id="trilha-progress-pct">0%</span>
+                    </div>
+                    <div class="progress-bar progress-bar-lg">
+                        <div class="progress-fill" id="trilha-progress-bar" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div id="modules-container">
+                    <!-- JS will populate modules, providing module 1 template -->
+                    <div class="module-card">
+                        <div class="module-header" onclick="toggleModule(0)">
+                            <div class="module-number">1</div>
+                            <div class="module-info">
+                                <h3>Entendendo o Básico</h3>
+                                <span class="module-meta">3 lições · ~15 min</span>
+                            </div>
+                            <i class="module-chevron" data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="module-lessons show" id="module-0-lessons">
+                            <div class="lesson-item" data-lesson-id="1" onclick="startLesson(1)">
+                                <div class="lesson-status"><i data-lucide="circle"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">O que é inteligência artificial, afinal?</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="lesson-item" data-lesson-id="2" onclick="startLesson(2)">
+                                <div class="lesson-status"><i data-lucide="circle"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">O que a IA pode (e não pode) fazer</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="lesson-item" data-lesson-id="3" onclick="startLesson(3)">
+                                <div class="lesson-status"><i data-lucide="circle"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Como a IA "aprende"</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Module 2 -->
+                    <div class="module-card">
+                        <div class="module-header" onclick="toggleModule(1)">
+                            <div class="module-number">2</div>
+                            <div class="module-info">
+                                <h3>Suas Primeiras Conversas com IA</h3>
+                                <span class="module-meta">3 lições · ~15 min</span>
+                            </div>
+                            <i class="module-chevron" data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="module-lessons" id="module-1-lessons">
+                            <div class="lesson-item locked" data-lesson-id="4">
+                                <div class="lesson-status"><i data-lucide="lock"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Lição 4</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                            </div>
+                            <div class="lesson-item locked" data-lesson-id="5">
+                                <div class="lesson-status"><i data-lucide="lock"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Lição 5</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                            </div>
+                            <div class="lesson-item locked" data-lesson-id="6">
+                                <div class="lesson-status"><i data-lucide="lock"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Lição 6</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Module 3 -->
+                    <div class="module-card">
+                        <div class="module-header" onclick="toggleModule(2)">
+                            <div class="module-number">3</div>
+                            <div class="module-info">
+                                <h3>IA na Prática</h3>
+                                <span class="module-meta">3 lições · ~15 min</span>
+                            </div>
+                            <i class="module-chevron" data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="module-lessons" id="module-2-lessons">
+                            <div class="lesson-item locked" data-lesson-id="7">
+                                <div class="lesson-status"><i data-lucide="lock"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Lição 7</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                            </div>
+                            <div class="lesson-item locked" data-lesson-id="8">
+                                <div class="lesson-status"><i data-lucide="lock"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Lição 8</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                            </div>
+                            <div class="lesson-item locked" data-lesson-id="9">
+                                <div class="lesson-status"><i data-lucide="lock"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Lição 9</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Module 4 -->
+                    <div class="module-card">
+                        <div class="module-header" onclick="toggleModule(3)">
+                            <div class="module-number">4</div>
+                            <div class="module-info">
+                                <h3>Usando IA com Responsabilidade</h3>
+                                <span class="module-meta">3 lições · ~15 min</span>
+                            </div>
+                            <i class="module-chevron" data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="module-lessons" id="module-3-lessons">
+                            <div class="lesson-item locked" data-lesson-id="10">
+                                <div class="lesson-status"><i data-lucide="lock"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Lição 10</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                            </div>
+                            <div class="lesson-item locked" data-lesson-id="11">
+                                <div class="lesson-status"><i data-lucide="lock"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Lição 11</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                            </div>
+                            <div class="lesson-item locked" data-lesson-id="12">
+                                <div class="lesson-status"><i data-lucide="lock"></i></div>
+                                <div class="lesson-info">
+                                    <span class="lesson-title">Lição 12</span>
+                                    <span class="lesson-meta">~5 min · 10 pts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6c. LICAO -->
+            <div class="view" data-view="licao">
+                <div class="lesson-top-bar">
+                    <button class="btn-back" onclick="showView('trilha')" aria-label="Fechar Lição">
+                        <i data-lucide="x"></i> Fechar
+                    </button>
+                    <div class="lesson-progress-wrapper">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="lesson-progress-fill" style="width: 10%;"></div>
+                        </div>
+                        <span id="lesson-step-text">1 de 6</span>
+                    </div>
+                </div>
+                <div class="lesson-body" id="lesson-body">
+                    <!-- JS renders sections here dynamically -->
+                </div>
+                <div class="lesson-footer">
+                    <button id="lesson-continue-btn" class="btn btn-primary btn-block" onclick="nextSection()">Continuar</button>
+                </div>
+            </div>
+
+            <!-- 6d. CONCLUSAO -->
+            <div class="view" data-view="conclusao">
+                <div class="conclusao-wrapper">
+                    <div class="conclusao-card">
+                        <div class="conclusao-icon">
+                            <i data-lucide="check-circle"></i>
+                        </div>
+                        <h1>Lição concluída! 🎉</h1>
+                        <p id="completed-lesson-title">O que é inteligência artificial, afinal?</p>
+                        
+                        <div class="conclusao-stats">
+                            <div class="conclusao-stat">
+                                <span id="earned-points" class="conclusao-value">10</span>
+                                <span>pontos ganhos</span>
+                            </div>
+                            <div class="conclusao-stat">
+                                <span id="lesson-score" class="conclusao-value">100%</span>
+                                <span>de acerto</span>
+                            </div>
+                        </div>
+                        
+                        <div class="conclusao-actions">
+                            <button id="next-lesson-btn" class="btn btn-primary btn-lg" onclick="startLesson(2)">Próxima lição</button>
+                            <button class="btn btn-outline" onclick="showView('trilha')">Ver trilha</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6e. PROGRESSO -->
+            <div class="view" data-view="progresso">
+                <div class="content-header">
+                    <h1>Seu progresso</h1>
+                    <p>Acompanhe sua evolução na trilha IA sem Mistério.</p>
+                </div>
+                
+                <div class="progress-overview">
+                    <div class="progress-circle-wrapper">
+                        <div class="progress-circle">
+                            <div id="overall-progress-value">0%</div>
+                        </div>
+                        <span>concluído</span>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: #e0f7fa;"><i data-lucide="check" style="color: #0B4F6C;"></i></div>
+                        <div class="stat-info">
+                            <span id="progress-total-completed" class="stat-value">0</span>
+                            <span class="stat-label">Lições completas</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: #fffde7;"><i data-lucide="star" style="color: #fbc02d;"></i></div>
+                        <div class="stat-info">
+                            <span id="progress-total-points" class="stat-value">0</span>
+                            <span class="stat-label">Pontos totais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-title">
+                    <h2>Por módulo</h2>
+                </div>
+                <div id="progress-modules-container">
+                    <!-- JS populates with module-by-module progress bars -->
+                </div>
+            </div>
+
+            <!-- 6f. PERFIL -->
+            <div class="view" data-view="perfil">
+                <div class="content-header">
+                    <h1>Seu perfil</h1>
+                </div>
+
+                <div class="perfil-card">
+                    <form id="perfil-form" onsubmit="saveProfile(event)">
+                        <div class="form-group">
+                            <label for="perfil-nome">Nome</label>
+                            <input id="perfil-nome" type="text" value="Estudante">
+                        </div>
+                        <div class="form-group">
+                            <label for="perfil-email">E-mail</label>
+                            <input id="perfil-email" type="email" value="estudante@email.com" readonly disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="perfil-nivel">Nível de experiência</label>
+                            <select id="perfil-nivel">
+                                <option value="nenhuma">Nunca usei</option>
+                                <option value="basica">Já experimentei</option>
+                                <option value="intermediaria">Uso de vez em quando</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="perfil-objetivo">Objetivo</label>
+                            <select id="perfil-objetivo">
+                                <option value="entender">Entender o que é IA de verdade</option>
+                                <option value="trabalho">Usar IA no meu trabalho</option>
+                                <option value="produtividade">Ser mais produtivo(a) no dia a dia</option>
+                                <option value="curiosidade">Curiosidade — quero explorar</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Salvar alterações</button>
+                    </form>
+                </div>
+
+                <div class="perfil-card danger-zone">
+                    <h3>Zona de risco</h3>
+                    <p>Esta ação não pode ser desfeita.</p>
+                    <button class="btn btn-danger" disabled>Excluir conta (em breve)</button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- 7. ADMIN SHELL -->
+    <section class="page" data-page="admin">
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">✦ Desvende IA</div>
+                <span class="admin-badge">Admin</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-item active" data-view="admin-dashboard" onclick="showAdminView('admin-dashboard')">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="admin-trilhas" onclick="showAdminView('admin-trilhas')">
+                    <i data-lucide="route"></i>
+                    <span>Trilhas</span>
+                </a>
+                <a href="#" class="sidebar-item" data-view="admin-licao-editor" onclick="showAdminView('admin-licao-editor')">
+                    <i data-lucide="book-open"></i>
+                    <span>Lições</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-item" onclick="navigateTo('app')">
+                    <i data-lucide="arrow-left"></i>
+                    <span>Voltar ao site</span>
+                </a>
+                <hr>
+                <a href="#" class="sidebar-item" onclick="navigateTo('landing')">
+                    <i data-lucide="log-out"></i>
+                    <span>Sair</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="admin-content">
+            <!-- 7a. ADMIN DASHBOARD -->
+            <div class="admin-view active" data-view="admin-dashboard">
+                <h1>Dashboard</h1>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="users"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Total de alunos</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="book-open"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Lições publicadas</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="layers"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">4</span>
+                            <span class="stat-label">Módulos</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="route"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">1</span>
+                            <span class="stat-label">Trilhas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Atividade recente</h2>
+                <div class="admin-activity-list">
+                    <div class="activity-item">
+                        <i data-lucide="user-plus"></i>
+                        <span>Novo aluno registrado: Maria S.</span>
+                        <span class="activity-time">Há 5 min</span>
+                    </div>
+                    <div class="activity-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>João P. concluiu a Lição 3</span>
+                        <span class="activity-time">Há 15 min</span>
+                    </div>
+                    <div class="activity-item">
+                        <i data-lucide="edit"></i>
+                        <span>Lição "Como a IA aprende" atualizada</span>
+                        <span class="activity-time">Há 2 horas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7b. ADMIN TRILHAS -->
+            <div class="admin-view" data-view="admin-trilhas">
+                <div class="admin-header">
+                    <h1>Trilhas</h1>
+                    <button class="btn btn-primary"><i data-lucide="plus"></i> Nova trilha</button>
+                </div>
+                <div class="admin-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Status</th>
+                                <th>Módulos</th>
+                                <th>Lições</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>IA sem Mistério</td>
+                                <td><span class="badge badge-success">Publicado</span></td>
+                                <td>4</td>
+                                <td>12</td>
+                                <td>
+                                    <button class="btn btn-outline btn-sm">Editar</button>
+                                    <button class="btn btn-outline btn-sm">Ver</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 7c. ADMIN LICAO EDITOR -->
+            <div class="admin-view" data-view="admin-licao-editor">
+                <div class="admin-header">
+                    <h1>Editor de Lição</h1>
+                    <div class="admin-header-actions">
+                        <button id="admin-preview-btn" class="btn btn-outline" onclick="adminPreviewLesson()">
+                            <i data-lucide="eye"></i> Pré-visualizar
+                        </button>
+                        <button id="admin-save-btn" class="btn btn-primary" onclick="adminSaveLesson()">Salvar</button>
+                    </div>
+                </div>
+                
+                <div class="admin-editor-layout">
+                    <div class="admin-lesson-selector">
+                        <label for="admin-lesson-select">Selecionar lição</label>
+                        <select id="admin-lesson-select" onchange="adminSelectLesson()">
+                            <optgroup label="Módulo 1">
+                                <option value="1">Lição 1: O que é IA?</option>
+                                <option value="2">Lição 2: O que a IA faz</option>
+                                <option value="3">Lição 3: Como a IA aprende</option>
+                            </optgroup>
+                            <optgroup label="Módulo 2">
+                                <option value="4">Lição 4</option>
+                                <option value="5">Lição 5</option>
+                                <option value="6">Lição 6</option>
+                            </optgroup>
+                            <optgroup label="Módulo 3">
+                                <option value="7">Lição 7</option>
+                                <option value="8">Lição 8</option>
+                                <option value="9">Lição 9</option>
+                            </optgroup>
+                            <optgroup label="Módulo 4">
+                                <option value="10">Lição 10</option>
+                                <option value="11">Lição 11</option>
+                                <option value="12">Lição 12</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <form id="admin-lesson-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="admin-title">Título</label>
+                                <input id="admin-title" type="text" placeholder="Título da lição">
+                            </div>
+                            <div class="form-group">
+                                <label for="admin-status">Status</label>
+                                <select id="admin-status">
+                                    <option value="rascunho">Rascunho</option>
+                                    <option value="publicado">Publicado</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="admin-time">Tempo estimado (min)</label>
+                            <input id="admin-time" type="number" min="1" max="60">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-hook">Pergunta-gancho</label>
+                            <textarea id="admin-hook" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-explanation">Explicação</label>
+                            <textarea id="admin-explanation" rows="6"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-visual">Exemplo visual (HTML permitido)</label>
+                            <textarea id="admin-visual" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-summary">Resumo</label>
+                            <textarea id="admin-summary" rows="3"></textarea>
+                        </div>
+
+                        <hr>
+                        <h3>Atividade</h3>
+                        
+                        <div class="form-group">
+                            <label for="admin-question-text">Pergunta da atividade</label>
+                            <textarea id="admin-question-text" rows="2"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-question-type">Tipo</label>
+                            <select id="admin-question-type">
+                                <option value="multipla">Múltipla escolha</option>
+                                <option value="vf">Verdadeiro ou Falso</option>
+                                <option value="ordenacao">Ordenação</option>
+                                <option value="texto">Resposta curta</option>
+                            </select>
+                        </div>
+
+                        <div class="admin-alternatives" id="admin-alternatives">
+                            <div class="admin-alternative">
+                                <input class="form-input" type="text" placeholder="Alternativa 1">
+                                <label><input type="checkbox" class="correct-checkbox"> Correta</label>
+                            </div>
+                            <div class="admin-alternative">
+                                <input class="form-input" type="text" placeholder="Alternativa 2">
+                                <label><input type="checkbox" class="correct-checkbox"> Correta</label>
+                            </div>
+                            <div class="admin-alternative">
+                                <input class="form-input" type="text" placeholder="Alternativa 3">
+                                <label><input type="checkbox" class="correct-checkbox"> Correta</label>
+                            </div>
+                            <div class="admin-alternative">
+                                <input class="form-input" type="text" placeholder="Alternativa 4">
+                                <label><input type="checkbox" class="correct-checkbox"> Correta</label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="admin-feedback-correct">Feedback - acerto</label>
+                                <textarea id="admin-feedback-correct" rows="2"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="admin-feedback-incorrect">Feedback - erro</label>
+                                <textarea id="admin-feedback-incorrect" rows="2"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-points">Pontos</label>
+                            <input id="admin-points" type="number" value="10">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 7d. ADMIN PREVIEW -->
+            <div class="admin-view" data-view="admin-preview">
+                <div class="admin-header">
+                    <button class="btn btn-outline" onclick="showAdminView('admin-licao-editor')" aria-label="Voltar ao editor">
+                        <i data-lucide="arrow-left"></i> Voltar ao editor
+                    </button>
+                    <h1>Pré-visualização</h1>
+                </div>
+                <div class="admin-preview-frame">
+                    <div id="admin-preview-container">
+                        <!-- JS renders lesson preview here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- 8. TOAST CONTAINER -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
