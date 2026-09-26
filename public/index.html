@@ -385,11 +385,13 @@
 
         <!-- FOOTER DA LANDING PAGE -->
         <footer class="footer">
-            <div>© 2026 Desvende IA — Coleção Inteligência Artificial na Prática. Todos os direitos reservados.</div>
-            <div>
-                <a href="#guias">Os Guias</a> · 
-                <a href="#oferta">Garantia</a> · 
-                <a href="#" onclick="navigateTo('login')">Entrar na Área de Membros</a>
+            <div class="footer-content">
+                <div>© 2026 Desvende IA — Coleção Inteligência Artificial na Prática. Todos os direitos reservados.</div>
+                <div>
+                    <a href="#guias">Os Guias</a> · 
+                    <a href="#oferta">Garantia</a> · 
+                    <a href="#" onclick="navigateTo('login')">Entrar na Área de Membros</a>
+                </div>
             </div>
         </footer>
     </section>
@@ -807,47 +809,96 @@
                 </div>
             </div>
 
-            <!-- 6e. PROGRESSO -->
+                        <!-- 6e. PROGRESSO (GAMIFIED LEARNING MAP) -->
             <div class="view" data-view="progresso">
-                <div class="content-header">
-                    <h1>Seu Progresso de Aprendizagem</h1>
-                    <p>Acompanhe seu desempenho detalhado por módulo e estatísticas de conquistas.</p>
+                <!-- HEADER STATUS DO JOGADOR -->
+                <div class="game-status-header mb-32">
+                    <div class="player-profile-badge">
+                        <div class="user-avatar-medium" id="game-user-avatar">EST</div>
+                        <div class="player-info">
+                            <strong id="game-user-name">Estudante</strong>
+                            <span class="player-rank"><i data-lucide="award"></i> Nível <span id="game-user-level">1</span> · Explorador de IA</span>
+                        </div>
+                    </div>
+
+                    <div class="game-stats-pills">
+                        <div class="game-stat-pill xp">
+                            <i data-lucide="zap"></i>
+                            <div>
+                                <strong id="progress-total-points">0 XP</strong>
+                                <span>Pontos Acumulados</span>
+                            </div>
+                        </div>
+                        <div class="game-stat-pill streak">
+                            <i data-lucide="flame"></i>
+                            <div>
+                                <strong id="game-user-streak">1 Dia</strong>
+                                <span>Sequência Ativa</span>
+                            </div>
+                        </div>
+                        <div class="game-stat-pill progress">
+                            <i data-lucide="target"></i>
+                            <div>
+                                <strong id="overall-progress-value">0%</strong>
+                                <span><span id="progress-total-completed">0/12</span> Lições</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="progresso-metrics-grid mb-32">
-                    <div class="metric-card">
-                        <div class="metric-icon cyan-bg"><i data-lucide="book-open"></i></div>
-                        <div class="metric-info">
-                            <span class="metric-value" id="progress-total-completed">0 / 12</span>
-                            <span class="metric-label">Lições Concluídas</span>
+                <!-- MAPA DO JOGO DE APRENDIZAGEM -->
+                <div class="game-map-card mb-32">
+                    <div class="game-map-header">
+                        <div>
+                            <h2><i data-lucide="map-pin" style="color: var(--accent-purple);"></i> Mapa de Aprendizagem & Fases</h2>
+                            <p class="text-secondary">Avance de fase em fase para desbloquear novas habilidades e conquistar seu certificado.</p>
+                        </div>
+                        <div class="progress-bar-inline">
+                            <div class="progress-bar progress-bar-lg mb-8">
+                                <div class="progress-fill" id="progresso-banner-fill" style="width: 0%;"></div>
+                            </div>
+                            <span id="progresso-banner-text" class="text-xs text-muted">0 de 12 lições completas (0% da trilha)</span>
                         </div>
                     </div>
-                    <div class="metric-card">
-                        <div class="metric-icon orange-bg"><i data-lucide="zap"></i></div>
-                        <div class="metric-info">
-                            <span class="metric-value" id="progress-total-points">0 pts</span>
-                            <span class="metric-label">Pontos Acumulados</span>
-                        </div>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-icon purple-bg"><i data-lucide="award"></i></div>
-                        <div class="metric-info">
-                            <span class="metric-value" id="overall-progress-value">0%</span>
-                            <span class="metric-label">Conclusão da Trilha</span>
-                        </div>
+
+                    <!-- GAME MAP BOARD (TRAIL DE NÍVEIS) -->
+                    <div class="game-map-board" id="game-map-board">
+                        <!-- Gerado via JS em renderProgress() -->
                     </div>
                 </div>
 
-                <div class="progresso-banner-card mb-32">
-                    <div class="progresso-banner-text">
-                        <h3>Trilha Oficial: IA sem Mistério</h3>
-                        <p class="text-secondary">Seu progresso é gravado automaticamente a cada lição e atividade concluída.</p>
-                    </div>
-                    <div class="progresso-banner-bar-box">
-                        <div class="progress-bar progress-bar-lg mb-8">
-                            <div class="progress-fill" id="progresso-banner-fill" style="width: 0%;"></div>
+                <!-- TROFÉUS E CONQUISTAS -->
+                <div class="section-title mb-16">
+                    <h2><i data-lucide="trophy" style="color: #F59E0B;"></i> Conquistas & Troféus Desbloqueáveis</h2>
+                </div>
+                <div class="achievements-grid mb-32" id="achievements-container">
+                    <div class="achievement-item unlocked" id="ach-1">
+                        <div class="achievement-icon">🚀</div>
+                        <div class="achievement-info">
+                            <strong>Primeira Conquista</strong>
+                            <p>Conclua a lição inicial da plataforma</p>
                         </div>
-                        <span class="text-secondary text-sm" id="progresso-banner-text">0 de 12 lições completas</span>
+                    </div>
+                    <div class="achievement-item locked" id="ach-2">
+                        <div class="achievement-icon">⚡</div>
+                        <div class="achievement-info">
+                            <strong>Mestre do Prompt</strong>
+                            <p>Acumule 50+ XP em exercícios</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item locked" id="ach-3">
+                        <div class="achievement-icon">🔥</div>
+                        <div class="achievement-info">
+                            <strong>Foco Total</strong>
+                            <p>Estude por 3 dias seguidos</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item locked" id="ach-4">
+                        <div class="achievement-icon">🎓</div>
+                        <div class="achievement-info">
+                            <strong>Especialista em IA</strong>
+                            <p>Conclua 100% da Trilha IA sem Mistério</p>
+                        </div>
                     </div>
                 </div>
 
@@ -893,6 +944,32 @@
                 </div>
             </div>
         </main>
+
+        <!-- 8. DOCK DE NAVEGAÇÃO INFERIOR RÁPIDA (NETFLIX FLOATING DOCK) -->
+        <div class="bottom-dock-container">
+            <div class="bottom-dock">
+                <button class="dock-btn dock-btn-main active" id="dock-btn-dashboards" onclick="showView('painel')">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Dashboards</span>
+                </button>
+                <button class="dock-btn" onclick="openCertificadosModal()">
+                    <i data-lucide="award"></i>
+                    <span>Meus Certificados</span>
+                </button>
+                <button class="dock-btn" onclick="openComunidadeModal()">
+                    <i data-lucide="users"></i>
+                    <span>Comunidade</span>
+                </button>
+                <button class="dock-btn" onclick="openSuporteModal()">
+                    <i data-lucide="help-circle"></i>
+                    <span>Suporte</span>
+                </button>
+                <button class="dock-btn" onclick="showView('perfil')">
+                    <i data-lucide="settings"></i>
+                    <span>Configurações</span>
+                </button>
+            </div>
+        </div>
     </section>
 
     <!-- 7. ÁREA ADMINISTRATIVA PROTEGIDA -->
@@ -1133,32 +1210,6 @@
             </div>
         </main>
     </section>
-
-    <!-- 8. DOCK DE NAVEGAÇÃO INFERIOR RÁPIDA (NETFLIX FLOATING DOCK) -->
-    <div class="bottom-dock-container">
-        <div class="bottom-dock">
-            <button class="dock-btn dock-btn-main active" id="dock-btn-dashboards" onclick="showView('painel')">
-                <i data-lucide="layout-dashboard"></i>
-                <span>Dashboards</span>
-            </button>
-            <button class="dock-btn" onclick="openCertificadosModal()">
-                <i data-lucide="award"></i>
-                <span>Meus Certificados</span>
-            </button>
-            <button class="dock-btn" onclick="openComunidadeModal()">
-                <i data-lucide="users"></i>
-                <span>Comunidade</span>
-            </button>
-            <button class="dock-btn" onclick="openSuporteModal()">
-                <i data-lucide="help-circle"></i>
-                <span>Suporte</span>
-            </button>
-            <button class="dock-btn" onclick="showView('perfil')">
-                <i data-lucide="settings"></i>
-                <span>Configurações</span>
-            </button>
-        </div>
-    </div>
 
     <!-- MODAIS / DRAWERS DO SISTEMA DE MEMBROS -->
     <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
